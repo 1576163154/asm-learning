@@ -1,0 +1,15 @@
+assume cs:codesg
+codesg segment 
+  mov ax,2000H
+  mov ss,ax
+  mov sp,0
+  add sp,4
+  pop ax
+  pop bx
+  push ax
+  push bx
+  
+  mov ax,4c00H
+  int 21h
+ codesg ends
+ end
